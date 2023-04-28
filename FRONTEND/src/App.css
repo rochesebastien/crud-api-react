@@ -1,0 +1,150 @@
+.page{
+  padding-left: 204px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-ctn{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-ctn form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.form-ctn form h2{
+  font-family: 'Dela Gothic One';
+  color: #ff5400;
+}
+
+.form-ctn form input[type='text']{
+  border: 2px solid #ff5400;
+  padding: 15px;
+  outline: none;
+  color: black;
+  font-size: large;
+  border-radius: 10px;
+}
+
+.form-ctn form select{
+  border: 2px solid #ff5400;
+  width: 200px;
+  height: 50px;
+  outline: none;
+  color: black;
+  font-size: large;
+  text-align: center;
+}
+
+
+.form-ctn form input[type='submit']{
+  background: #ff5400;
+  outline: none;
+  padding: 20px 70px;
+  border: 2px solid #ff5400;
+  font-family: 'Dela Gothic One';
+  color: white;
+  font-size: large;
+  transition: 0.1s ease-in-out;
+}
+
+.form-ctn form input[type='submit']:hover{
+  color: black;
+  border: 2px solid black;
+}
+
+
+.table_page{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px ;
+  justify-content: center;
+  align-items: center;
+}
+
+ h2{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-family: 'Dela Gothic One';
+}
+
+h2 a{
+  background: #ff5400;
+  outline: none;
+  padding: 10px 50px;
+  border: 2px solid #ff5400;
+  font-family: 'Dela Gothic One';
+  color: white;
+  font-size: large;
+  transition: 0.1s ease-in-out;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+h2 a:hover{
+  color: black;
+  border: 2px solid black;
+}
+
+h3{
+  font-family: 'Dela Gothic One';
+  color: #ff5400;
+}
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+    margin: 0 auto;
+  }
+  
+  table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+
+  table td svg  {
+    cursor: pointer;
+  }
+
+  table td a{
+    color: inherit;
+  }
+
+  table td svg:hover  {
+    filter: invert();
+  }
+
+  table tr{
+    color: white;
+    text-align: center;
+  }
+  
+  table tr:nth-child(even){
+    background-color: #f2f2f2;
+    color: black;
+}
+  
+  table tr:hover {background-color: #ddd;}
+  
+  table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #ff5400;
+    color: white;
+  }

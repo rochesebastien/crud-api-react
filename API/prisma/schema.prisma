@@ -1,0 +1,26 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  //   provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Contact {
+  id           Int      @id @default(autoincrement())
+  nom          String
+  prenom       String
+  idCivilite   Int 
+  civilite     Civilite @relation(fields: [idCivilite], references: [id])
+}
+
+model Civilite {
+  id        Int      @id @default(autoincrement())
+  libelle   String
+  contacts  Contact[] 
+}
